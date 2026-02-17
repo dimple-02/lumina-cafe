@@ -1,0 +1,155 @@
+/* --- menu.css --- */
+
+.menu-page {
+    background-color: var(--bg-color); 
+}
+
+.menu-header {
+    margin-top: 70px; 
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4a3325 100%);
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.menu-header h1 {
+    color: var(--accent-color);
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.full-menu-container {
+    max-width: 900px;
+    margin: -40px auto 60px; 
+    padding: 0 5%;
+    position: relative;
+    z-index: 10;
+}
+
+/* --- Cards --- */
+.menu-category {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 40px 50px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.category-title {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* --- Menu Items --- */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu-item-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item-row:hover {
+    background-color: #faf8f5; 
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.item-header h4 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dotted-line {
+    flex-grow: 1;
+    border-bottom: 2px dotted #d1d1d1;
+    margin: 0 15px;
+    position: relative;
+    top: -4px; 
+}
+
+.item-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.item-desc {
+    font-size: 0.95rem;
+    color: #666;
+    max-width: 85%;
+    line-height: 1.5;
+}
+
+/* --- Badges --- */
+.badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+.badge.popular {
+    background-color: #ffe8d6;
+    color: #d4a373;
+    border: 1px solid #d4a373;
+}
+
+/* --- Menu Mobile --- */
+@media (max-width: 768px) {
+    .menu-category { padding: 30px 20px; }
+    .item-header { flex-wrap: wrap; }
+    .dotted-line { display: none; }
+    .item-price { margin-left: auto; margin-top: 5px; }
+    .item-desc { max-width: 100%; }
+}
