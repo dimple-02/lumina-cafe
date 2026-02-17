@@ -24,8 +24,8 @@ This is a reusable project template that can be customized for any coffee shop o
 
 ```
 LuminaCafe/
+├── index.html              # Homepage
 ├── html/
-│   ├── index.html          # Homepage
 │   ├── menu.html           # Full menu page
 │   ├── about.html          # About us page
 │   ├── contact.html        # Contact page
@@ -39,7 +39,7 @@ LuminaCafe/
 ├── assets/
 │   ├── images/             # Product and team photos
 │   ├── icons/              # UI icons and social media icons
-│   └── favicon.ico         # Browser tab icon
+├── favicon.svg             # Browser tab icon
 ├── README.md               # This file
 └── .gitignore             # Git ignore file
 ```
@@ -55,7 +55,7 @@ LuminaCafe/
    - Add your own images to `assets/images/`
    - Update contact details, hours, and location
    - Modify menu items and pricing
-3. Open `html/index.html` in your web browser
+3. Open `index.html` in your web browser
 4. Deploy to your web hosting service
 
 ### Customization Checklist:
